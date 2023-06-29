@@ -28,3 +28,9 @@ class Quote(Document):
     tags = ListField()
     author = ReferenceField(Author)
     quote = StringField()
+
+
+class Contact(Document):
+    fullname = StringField()
+    email = StringField()
+    sent = BooleanField(default=False)
